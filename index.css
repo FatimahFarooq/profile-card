@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+
+  --dark-gray: hsl(0, 0%, 59%);
+
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg),
+    var(--dark-cyan);
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position-x: -175%, 277%;
+  background-position-y: -32%, 116%;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  background-size: 87%;
+  color: var(--dark-gray);
+  background-attachment: fixed;
+}
+
+p,
+ul > li > span {
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 700;
+}
+
+.card {
+  border-radius: 1rem;
+  padding: 0;
+  background: #fff;
+  padding-bottom: 1em;
+}
+
+.card-header {
+  background: url(images/bg-pattern-card.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  position: relative;
+}
+.card-image {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.profile-image-holder {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  z-index: 2;
+  position: absolute;
+  top: 87px;
+  left: 120px;
+}
+
+.person-img {
+  border-radius: 50px;
+  border: 0.25em solid #fff;
+}
+
+.card-body,
+.card-footer ul li,
+.card-body .name-age,
+.card-footer ul {
+  display: flex;
+}
+
+.card-body {
+  margin-top: 4em;
+}
+
+.card-body,
+.card-footer ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-age > p:nth-child(2),
+.city {
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+}
+
+.city {
+  margin: 1em auto 4em;
+  font-size: 0.75em;
+}
+
+.name-age > p:nth-child(1) {
+  margin-right: 0.75em;
+}
+
+.card-footer {
+  padding: 0 2em;
+}
+
+.card-footer ul {
+  justify-content: space-around;
+}
+
+.card-footer li > span {
+  margin-bottom: 0.5em;
+}
+
+.card-footer li {
+  font-size: 0.65em;
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    background: url(images/bg-pattern-top.svg),
+      url(images/bg-pattern-bottom.svg), var(--dark-cyan);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    color: var(--dark-gray);
+    background-position: -78% -73%, 163% 208%;
+  }
+}
