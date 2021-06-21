@@ -69,7 +69,7 @@ ul > li > span {
 
 .person-img {
   border-radius: 50px;
-  border: 0.25em solid #fff;
+  border: 0.23em solid #fff;
 }
 
 .card-body,
@@ -134,5 +134,13 @@ ul > li > span {
     justify-content: center;
     color: var(--dark-gray);
     background-position: -78% -73%, 163% 208%;
+  }
+
+  .person-img {
+    border-radius: 50px;
+    border: 0.24em solid #fff;
+  }
+  .profile-image-holder {
+    left: 121px;
   }
 }
